@@ -13,6 +13,10 @@ Input Validation & Sanitization
 Use HTTPOnly and Secure Cookies
 Escaping User Input: <, >, and &
 
+Examples :
+<script>alert('XSS')</script>
+<img src="x" onerror="alert('XSS')">
+
 -----------------------------------------------------------------------------------------------------------------------------------------
 5. What is the difference between stored and reflected XSS?
 Answer:
