@@ -1,1 +1,61 @@
+WHAT IS XSS :
 
+XSS is a security vulnerability that allows an attacker to inject malicious scripts (usually JavaScript) into web pages viewed by other users
+
+Stored XSS: The malicious script is stored on the server (e.g., in a database) and then executed whenever a user loads a page containing the script.
+
+Reflected XSS: The malicious script is reflected off a web server (e.g., through a URL or form submission) and executed immediately in the user’s browser.
+
+DOM-based XSS: The vulnerability is in the client-side JavaScript, where the page content is modified dynamically, and the script is executed based on user interaction without a server request.
+
+Mitigations :
+Input Validation & Sanitization
+Use HTTPOnly and Secure Cookies
+Escaping User Input: <, >, and &
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+5. What is the difference between stored and reflected XSS?
+Answer:
+Stored XSS occurs when malicious code is stored on the server (e.g., in a database or a comment section) and later executed when the page is loaded.
+Reflected XSS occurs when user input (e.g., in a URL or form) is immediately reflected by the web server and executed without being properly sanitized.
+
+6. What is DOM-based XSS?
+Answer: DOM-based XSS occurs when the vulnerability is in the client-side JavaScript. The malicious script is executed as a result of changes to the DOM (Document Object Model), which is triggered by user actions, such as clicking a link or entering data into a form.
+
+7. How can you protect against XSS in a web application?
+Answer:
+Sanitize and escape user input: Always sanitize user inputs (e.g., remove or encode HTML special characters).
+Implement Content Security Policy (CSP): This restricts what content can be loaded, thus minimizing the chance of loading malicious scripts.
+Validate inputs rigorously: Accept only the expected format (e.g., numeric, alphanumeric, etc.).
+Use secure frameworks: Many modern web frameworks offer built-in protections for XSS attacks, such as automatic escaping.
+
+8. Can XSS attacks occur on mobile applications?
+Answer: Yes, XSS attacks can also occur on mobile apps if they use webviews or load web content. If the app does not properly handle and sanitize user input or the content it displays, XSS vulnerabilities can be exploited in mobile apps as well.
+
+9. What is the role of HTTPOnly and Secure flags in preventing XSS attacks?
+Answer:
+HTTPOnly flag prevents JavaScript from accessing the cookies, reducing the risk of stealing session cookies via XSS.
+Secure flag ensures that cookies are only sent over HTTPS connections, preventing them from being sent over unencrypted HTTP.
+
+10. What is Content Security Policy (CSP) and how does it prevent XSS?
+Answer: CSP is a security header that restricts the sources from which content (including scripts) can be loaded on a website. By setting a strong CSP, you can prevent unauthorized scripts from executing, making it harder for attackers to perform XSS attacks.
+
+11. What are some examples of XSS payloads?
+Answer:
+<script>alert('XSS')</script>: This simple script will pop up an alert box in the user's browser.
+<img src="x" onerror="alert('XSS')">: This exploits the onerror event handler of an image tag to execute JavaScript when the image fails to load.
+
+12. How would you test for XSS vulnerabilities?
+Answer:
+Manual Testing: Try injecting common XSS payloads into input fields or URLs and observe the behavior.
+Automated Scanning: Use security tools like OWASP ZAP or Burp Suite to scan for XSS vulnerabilities.
+Check for missing input sanitization: Ensure that user inputs are being properly sanitized or encoded before being displayed.
+
+13. Can an attacker perform an XSS attack through an image file?
+Answer: Yes, attackers can use an image file as a vector for XSS by exploiting HTML event attributes like onerror, which can trigger malicious JavaScript when the image fails to load.
+
+14. What is a common mistake that leads to XSS vulnerabilities in web applications?
+Answer: A common mistake is not sanitizing or encoding user-generated content properly before displaying it in a webpage. This can allow scripts to run when users load the page.
+
+15. How does browser security play a role in preventing XSS attacks?
+Answer: Modern browsers have built-in protections like Same-Origin Policy and CSP that help prevent malicious scripts from executing across different websites or loading unauthorized content. Additionally, some browsers display warnings or block potentially harmful content.
