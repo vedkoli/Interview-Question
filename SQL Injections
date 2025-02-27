@@ -1,1 +1,52 @@
+What is SQL Injection and its types and mitigation :
+SQLi in a web based vulnrerebility which allows an attacker to interfrer with query which application makes to its backend database.
+By injecting a malicious code into input feilds attacker can steal data, modify records , bypass authentication and even execute system commands.
+
+1) Inband : Reflects error/result 
+        a. Error base : & && ' ; || | \n $()    (' OR 1=1--)
+        b. Union base : ' UNION SELECT username,password FROM users --
+                        'UNION SELECT NULL --              => Error means no 1 column
+                        'UNION SELECT NULL,NULL --         => Error means no 1 column
+                        'UNION SELECT NULL,NULL.NULL --   => No Error means 3 columns present
+                        'order by 1 --
+                        'order by 2 --
+                        'order by 3 --       => No Error means 3 columns present
+
+2) Blind : Does not reflect but shows signs as delay or requests to our server.
+       a. Time based : If condition in true -> sleep 10
+                    Makes use of substring function of SQL to determine word by word  to get full string.
+       b. Boolean based : True/false : https://apple?id=1 or 1=1   => TRUE
+                                     https://apple?id=1 or 1=2   => FALSE
+                                     Makes use of substring function of SQL to determine word by word  to get full string.
+
+3) Out of band : Makes use of xp_cmdshell method (Network connection).
+                Attacker causes the database to make requests to external DNS/HTTP servers controlled by the attacker.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
