@@ -1,0 +1,14 @@
+SSRF :
+Is a vuln which arries when application fetches resources from other server without validating users input in URL/Request.
+
+####### Where to check ########
+API Endpoints Accepting URLs or HTTP Requests
+Any feild taking any web adress or IP Address
+Whereever we see URL/IP in request header.
+
+########## Mitigations ############
+Block Localhost and Internal IPs
+Whitelist Allowed Hosts
+Block Outbound Requests
+Limit Internal Access
+Monitor and Log Requests
