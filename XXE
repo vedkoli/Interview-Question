@@ -1,0 +1,46 @@
+It occurs when an XML parser processes an XML document that contains references to external 
+entities (files or URLs), and the application allows these references to be used without 
+proper validation or sanitization.
+
+Bydefault :- XML Standard parser supports these fetures
+XML documentation specification not correctly implimented.
+
+XML Entity : A Way of representing data in XML.
+DTD:- Document Type Declaration.
+
+########## EXAMPLE #############
+<!DOCTYPE foo [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<user>
+  <name>&xxe;</name>
+</user>
+
+Possible attacks : File retrive.
+                   SSRF.
+                   Bliend via Error message.
+
+Prevention : 1. Disable XML Parser library.
+             2. Disable Xinclude.
+             3. Limit File Access
+             4. Use JSON Instead of XML
+
+Where to Check for XXE Vulnerabilities:
+Where ever we see XML in request header.
+File Upload Endpoints
+Check user inputs like form fields or URL parameters where XML data could be included
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
