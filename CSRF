@@ -1,0 +1,15 @@
+
+CSRF happens when a malicious website/application/link tricks you into performing 
+a unwanted action on a website where you are already logedin.
+
+
+Simple Example:
+You are logged into your bank account.
+You visit a malicious website.
+The malicious website sends a request to your bank (like transferring money) using your login session.
+The bank thinks you made the request and performs the action.
+
+Minigations :
+Use Anti-CSRF Tokens
+SameSite Cookies
+Check Referer/Origin Headers
