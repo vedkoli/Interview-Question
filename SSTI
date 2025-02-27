@@ -1,0 +1,27 @@
+SSTI (Server-Side Template Injection)
+It occurs when an attacker is able to inject malicious code into a web application's template engine.
+Template engines are used to dynamically generate web pages by combining templates (HTML, XML, etc.) with data
+When user input is improperly handled, an attacker can inject template code, causing the server to execute 
+unexpected actions, such as executing arbitrary code or accessing sensitive data.
+
+e.g., {{ user_name }}
+Hello, {{ user_name }}! Welcome to your profile.
+
+If the application directly injects this input into the template without sanitizing it,
+the template engine might treat {{ config }} as a command to access the application's configuration object.
+
+E.G :
+${7*7}
+${{7*7}}
+{{7*7}}
+#{7*7}
+${{7*7}}
+#{7*7}
+<%= 7*7 %>
+
+Refer : https://book.hacktricks.wiki/en/pentesting-web/ssti-server-side-template-injection/index.html
+
+Remidation:
+Input Validation and Sanitization
+Use Safe Template Engines
+Whitelist Inputs: Limit the types of data that can be used in templates, 
