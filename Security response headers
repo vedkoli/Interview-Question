@@ -1,0 +1,9 @@
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Frame-Options: DENY | X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.com;
+Cache-Control: no-store, no-cache, must-revalidate
+Allow: GET, POST, HEAD
+Access-Control-Allow-Origin: https://example.com
+Set-Cookie: sessionId=abcd1234; HttpOnly; Secure; SameSite=Strict
