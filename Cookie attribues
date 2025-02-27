@@ -1,0 +1,19 @@
+Cookie attribues are properties that define the behavior and scope of cookie in web browser.
+
+1. Name  :
+2. Value : Actual info/data cookie stores (sessionID,etc)
+3. Domain: Specifies the domain for which the cookie is valid. It also allows cookie across sub-Domain if needed.
+4. Path: URL Path for which the cookie is valid like /dashboard and its subpaths.
+5. Exipery/Max-Age: Expiry date / Max age in seconds
+6. Secure: If it is set, cookie will send over 'only HTTPs'
+7. HTTPOnly : If set cookie cant be access via js.
+8. SameSite : Controls when the cookie should send with cross-site request (strict, LAX , None).
+
+
+
+
+
+
+
+
+
