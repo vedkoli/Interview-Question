@@ -12,7 +12,7 @@ By injecting a malicious code into input feilds attacker can steal data, modify 
                         'order by 2 --
                         'order by 3 --       => No Error means 3 columns present
 
-2) Blind : Does not reflect but shows signs as delay or requests to our server.
+2) Blind : Does not reflect but shows signs as delay .
        a. Time based : If condition in true -> sleep 10
                     Makes use of substring function of SQL to determine word by word  to get full string.
        b. Boolean based : True/false : https://apple?id=1 or 1=1   => TRUE
