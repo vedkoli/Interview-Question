@@ -11,5 +11,10 @@ SSL : MD5, SHA-1 / key exchnage - KEA           /  Encryption : DES,RC4
 TLS : SHA-256    / key exchnage - DHE,ECDH,PSK  /  Encryption : AES
 
 
+1. Hello from Client.
+2. Hello from Server.
+3. ( Certificate containing servers public key. ) sign by CA's Private key.
+4. Client can verify certificate by CA's public key and get Server public key also.
+5. Clinet sents Session key to server  encrpted by Server public key.
 
 
