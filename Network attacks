@@ -1,0 +1,14 @@
+1. Denial of Service (DoS) Attacks
+2. Man-in-the-Middle (MitM) Attacks
+  Eavesdropping: Intercepting and listening to the communication between two parties without their knowledge.
+  Session Hijacking: Gaining unauthorized access to a session between a client and a server by stealing or predicting session tokens.
+  SSL Stripping: Downgrading a secure HTTPS connection to an unencrypted HTTP connection to intercept traffic.
+3. Phishing and Spear Phishing
+4. IP Spoofing: Sending packets with a forged source IP address to appear as though they are coming from a trusted source, often used in DoS or DDoS attacks.
+5. Brute Force Attacks
+6.DNS Spoofing: Corrupting the cache of a DNS resolver to redirect traffic to malicious websites instead of the intended legitimate sites.
+7.ARP Spoofing: An attacker sends falsified ARP (Address Resolution Protocol) messages to link their MAC address with an IP address of a
+legitimate system, allowing the attacker to intercept network traffic.
+8. Rogue DHCP: An attacker sets up a malicious DHCP (Dynamic Host Configuration Protocol) server, causing clients to receive 
+malicious IP configurations, redirecting them to attacker-controlled systems.
+9.Session Fixation: An attacker fixes a user’s session ID before the user logs in, allowing the attacker to hijack the session once the user authenticates.
