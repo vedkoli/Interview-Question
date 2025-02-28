@@ -1,0 +1,20 @@
+-sS: TCP SYN scan (stealth scan).
+-sT: TCP connect scan.
+-sU: UDP scan.
+-sA: TCP ACK scan.
+-sX: TCP Xmas scan.
+-sN: TCP Null scan.
+-sI: Idle scan.
+
+
+-sV: Service version detection.
+-sC: Run default scripts (useful for service enumeration).
+-A: Enable OS detection, version detection, script scanning, and traceroute.
+--script=
+
+-sn: Host discovery only (ping scan, no port scan).
+-Pn: Treat all hosts as up, no ping scan.
+
+TLS/SSL Related
+--script ssl-enum-ciphers: List supported SSL/TLS cipher suites.
+--script ssl-cert: Get the SSL certificate information.
