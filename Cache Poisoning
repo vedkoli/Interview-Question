@@ -1,0 +1,14 @@
+Attacker manipulates or injectes malacious data into web cache,
+causing the cache to serve incorrect and harmfull content to users.
+
+
+KEY value are set in HTTP Request header for which the response is cached in memory
+Attacker modifies or aters the value other than KEY Components like User-Agent, Accept-Language, Cookie, or Referer
+
+
+Mitigation Strategies:
+Use cache validation mechanisms to ensure cached content is legitimate.
+Implement cache headers to control what can and cannot be cached.
+Regularly clear and refresh caches to reduce the likelihood of stale or poisoned content.
+Monitor cache activity for unusual patterns that might indicate an attack.
+
