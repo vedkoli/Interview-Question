@@ -1,0 +1,15 @@
+SSL 3.0   
+TLS 1.0 1.1   
+TLS 1.2   
+TLS 1.3   
+
+They are cryptographic protocols used to provide secure communication over a computer network, Internet.
+Both use RSA for key exchange
+
+___________Difference _____________
+SSL : MD5, SHA-1 / key exchnage - KEA           /  Encryption : DES,RC4
+TLS : SHA-256    / key exchnage - DHE,ECDH,PSK  /  Encryption : AES
+
+
+
+
