@@ -1,0 +1,10 @@
+Parameter Tampering:
+Here attackers tries to manipulate parameters exchanged between the client and the server to alter application behaviou in a unintended way.
+This can lead to unauthorized access, privilageescalation or data manipulation.
+
+Examples : 
+GET Request         : https://example.com/balance?user=123  -> user=456
+POST Request        : item=Product&price=100  -> price=10
+Cookie manipulation : Set-Cookie: role=guest -> role=admin
+                      X-User-Type: Regular  -> Admin
+
