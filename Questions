@@ -1,0 +1,215 @@
+--Here’s a well-structured study plan based on the topics mentioned in the list:
+
+
+--------------------------------------
+
+1. Networking & Security Protocols
+
+TLS & SSL
+
+Difference between TLS & SSL
+
+TLS Handshake Process
+
+TLS_FALLBACK_SCSV
+
+Weak Ciphers & CBC Ciphers in TLS 1.2
+
+Is FTP protocol encrypted or unencrypted?
+
+SMTP Relay Attack
+
+DMARC & SPF
+
+Network Scanning & Reconnaissance
+
+How to scan or recon a network
+
+Nmap commands (scanning all ports, listing cipher suites & algorithms, scanning TCP & UDP ports)
+
+
+Common Network Attacks
+
+EternalBlue (MS-010) Attack in SMB
+
+StartTLS Attack
+
+HTTP Desync Attack
+
+HTTP Request Smuggling
+
+
+
+
+--------------------------------------
+
+2. Cryptography
+
+Types & Concepts
+
+Encoding vs Encryption vs Hashing vs Salting
+
+Cryptographic algorithms used in TLS & SSL
+
+MD5 & SHA256 vulnerabilities
+
+Strongest encryption algorithms/cipher suites used today
+
+Kind of cryptography used in SSL
+
+
+Password Hashing
+
+bcrypt, scrypt, Argon2
+
+
+
+
+--------------------------------------
+
+3. Web Application Security
+
+OWASP Top 10 (Web & API)
+
+Injection Vulnerabilities (SQLi, XSS, XXE, CSRF, SSRF)
+
+Broken Access Control
+
+Security Misconfiguration
+
+Sensitive Data Exposure
+
+API Security
+
+
+Common Web Vulnerabilities
+
+SQL Injection (Types & Mitigation)
+
+XSS (Reflected, Stored, DOM-based)
+
+CSRF (including CSRF in JSON)
+
+SSRF
+
+SSTI
+
+Command Injection
+
+Cache Poisoning
+
+LFI, RFI, CRLF Injection
+
+Parameter Tampering
+
+API Hooking
+
+
+Session & Authentication Security
+
+Session Hijacking vs Session Fixation
+
+Is it necessary for a cookie to have a secure attribute if HSTS is already implemented?
+
+How to bypass HttpOnly and get cookies
+
+
+Response Headers & Security Headers
+
+Important security response headers
+
+HSTS & Secure Cookie Attribute
+
+
+
+
+--------------------------------------
+
+4. Thick Client & Reverse Engineering
+
+Thick Client Security
+
+Basics of Thick Client Pentesting
+
+Common Vulnerabilities in Thick Clients
+
+EXE Hijacking & DLL Hijacking
+
+Reverse Engineering Basics
+
+Traffic Flowing in Clear Text
+
+
+
+
+--------------------------------------
+
+5. Security Tools & Exploitation Techniques
+
+Tools
+
+BurpSuite & Its Features
+
+Proficiency in Scanners, Proxy Interceptors & DAST Tools
+
+
+Exploits & Attacks
+
+Unrestricted File Upload Vulnerability
+
+JMX Exploit
+
+JBOSS Vulnerabilities & Insecure Deserialization Exploit
+
+
+
+
+--------------------------------------
+
+6. Security Fundamentals
+
+System & Network Security
+
+OSI Model
+
+Client-Server Architecture
+
+Network Security Basics
+
+Network Protocols
+
+
+Database & Security
+
+Different Types of DBMS
+
+SQL Injection & Its Mitigation
+
+
+
+
+--------------------------------------
+
+Study Approach:
+
+1. Start with Networking & Security Protocols (Understand TLS, SSL, and scanning techniques).
+
+
+2. Move to Cryptography (Focus on encryption, hashing, and password security).
+
+
+3. Study Web Application Security (OWASP Top 10 and common attacks).
+
+
+4. Learn Thick Client & Reverse Engineering (Exe/DLL hijacking, traffic analysis).
+
+
+5. Practice Security Tools (BurpSuite, Nmap, Scanners).
+
+
+6. Understand System Security & Databases (OSI model, DBMS, and SQL Injection).
+
+
+
+Would you like me to add any additional references or resources for these topics?
+
