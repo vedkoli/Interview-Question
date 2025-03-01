@@ -18,3 +18,14 @@ TLS : SHA-256    / key exchnage - DHE,ECDH,PSK  /  Encryption : AES
 5. Clinet sents Session key to server  encrpted by Server public key.
 
 
+######## TLS_FALLBACK_SCSV  ##########
+
+TLS Signaling Cipher suite value protect against TLS/SSL  DOWNGRDAE VALUE using poodle.
+
+While TLS handshake the highest possible protocol is used.
+
+Downgrading or poddle attack can lead to older version of SSL being used which can lead to MITM attack (BEAST ATTACK , Lucky13)
+When we enable TLS_FALLBACK_SCSV A DUMMY OR FAKE CIPHER SUITE listed during the client hello message to the server. This workaround is TLS_FALLBACK_SCSV  signal.
+
+It should support on client and server side .
+Althoug this does not garantee downgrading so taking security meases like disbaling weak ciphers is must
