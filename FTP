@@ -1,0 +1,20 @@
+The FTP (File Transfer Protocol) is unencrypted by default. This means that all data, including usernames, passwords, and transferred files, are sent in plain text, making it vulnerable to interception (e.g., Man-in-the-Middle (MITM) attacks or packet sniffing).
+
+Secure Alternatives to FTP
+
+If encryption is needed, use:
+
+1. FTPS (FTP Secure) – Adds SSL/TLS encryption to FTP.
+
+
+2. SFTP (SSH File Transfer Protocol) – Uses SSH encryption for secure file transfers.
+
+
+3. SCP (Secure Copy Protocol) – Another SSH-based secure file transfer method.
+
+
+
+Key Takeaway for Interviews:
+
+"FTP is an unencrypted protocol that transmits data in plain text, making it insecure for sensitive information. Secure alternatives like FTPS and SFTP should be used to protect data in transit."
+
