@@ -1,0 +1,20 @@
+
+1) Symmetric encryption (AES, ChaCha20) is used for encrypting the actual data.
+2) Asymmetric encryption (RSA, ECDHE, DH) is used for key exchange and authentication.
+3) Hashing (SHA-256, SHA-384, HMAC) is used for integrity and verification.
+4) Digital signatures (RSA, ECDSA, EdDSA) ensure the authenticity of the parties.
+
+
+1. Symmetric Encryption Algorithms (for data encryption)
+AES (Advanced Encryption Standard)
+ChaCha20
+
+
+2. Asymmetric Encryption Algorithms (for key exchange and authentication)
+RSA
+ECDHE
+DH
+
+3. Hashing Algorithms (for integrity and signatures)
+SHA-256
+HMAC
