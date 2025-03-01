@@ -1,0 +1,26 @@
+Encoding:==================
+Purpose: Makes data readable or transportable in certain environments (e.g., emails or URLs).
+Reversible: Yes. You can decode it back to the original format.
+Example: A file converted to Base64 encoding can be sent via email. It can be decoded back to its original form.
+
+
+Encryption:===================
+Purpose: Protects data confidentiality by making it unreadable without the decryption key.
+Reversible: Yes, but only with the correct key.
+Example: If a message is encrypted using AES, only someone with the decryption key can read it.
+
+Hashing:========================
+Purpose: Generates a fixed-size representation of data, useful for verifying data integrity or storing passwords securely.
+Reversible: No, it’s a one-way operation. The original data can’t be recovered from the hash.
+Example: Hashing a password ensures it’s stored as a fixed-length value. Even if someone steals the hash, they can't reverse it to get the original password.
+
+Salting:======================
+Purpose: Adds random data (salt) to the input before hashing to prevent attackers from using precomputed hash databases (like rainbow tables).
+Reversible: No, but it makes the hash unique even for identical inputs.
+Example: Two users with the same password will have different hashes if different salts are used.
+
+###############Key Points #############
+Encoding: For readability and transport (reversible).
+Encryption: For data security (reversible with a key).
+Hashing: For data verification (irreversible).
+Salting: To enhance security of hashed data (irreversible, but prevents common attacks)
