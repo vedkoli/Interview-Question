@@ -5,13 +5,13 @@
 
 1. Networking & Security Protocols
 
-TLS & SSL
+TLS & SSL ###########
 
-Difference between TLS & SSL
+Difference between TLS & SSL  ########
 
-TLS Handshake Process
+TLS Handshake Process ###########
 
-TLS_FALLBACK_SCSV
+TLS_FALLBACK_SCSV 
 
 Weak Ciphers & CBC Ciphers in TLS 1.2
 
@@ -23,12 +23,12 @@ DMARC & SPF
 
 Network Scanning & Reconnaissance
 
-How to scan or recon a network
+How to scan or recon a network ##################
 
-Nmap commands (scanning all ports, listing cipher suites & algorithms, scanning TCP & UDP ports)
+Nmap commands (scanning all ports, listing cipher suites & algorithms, scanning TCP & UDP ports) ##########
 
 
-Common Network Attacks
+Common Network Attacks ######
 
 EternalBlue (MS-010) Attack in SMB
 
